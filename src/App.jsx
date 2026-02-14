@@ -158,6 +158,7 @@ export default function App() {
 
   return (
     <div className="app" onPointerMove={handlePointerMove}>
+      <div className="title-overlay">Tommy da man bang center</div>
       <Canvas orthographic camera={{ position: [0, 0, 10], zoom: 100 }} dpr={[1, 1.75]}>
         <Suspense fallback={null}>
           <ImageField onSpawnerReady={bindSpawner} />
